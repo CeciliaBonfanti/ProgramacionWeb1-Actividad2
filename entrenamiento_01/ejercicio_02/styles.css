@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #ffdab9;
+    color: #0f172a;
+}
+.contenedor-principal{
+    width: 80%;
+    max-width: 55rem;
+    height: 100vh;
+    margin: 0 auto; /*centra el main en el body*/
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
