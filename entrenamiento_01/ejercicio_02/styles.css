@@ -10,7 +10,7 @@ body {
 }
 .contenedor-principal{
     width: 80%;
-    max-width: 55rem;
+    max-width: 55rem;/*Funciona como límite, si el 80% de la pantalla supera los 55rem se queda en esa medida*/
     height: 100vh;
     margin: 0 auto; /*centra el main en el body*/
     background-color: white;
@@ -18,4 +18,37 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+}
+
+.navbar, .footer{
+    background-color: #c2410c;
+    padding: 1.5rem;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar li:first-child {
+    border-right: 2px solid white;
+    padding-right: 2rem;
+}
+
+.footer p{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.recetas{
+    overflow-y: auto;
 }
