@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* evitar scroll */
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin: 0;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modelo {
+  width: 45vw;
+  height: 45vh;
+  display: grid;
+  border: 0.1rem solid black;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "uno uno dos dos"
+    "tres cuatro cinco seis"; /* esto define el sector que va a ocupar cada caja */
+}
+
+.caja {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid black;
+  font-size: 2rem;
+}
+
+.caja[class~="1"] {
+  background-color: rgb(203, 234, 129);
+  grid-area: uno;
+}
+
+.caja[class~="2"] {
+  background-color: rgb(228, 226, 128);
+  grid-area: dos;
+}
+
+.caja[class~="3"] {
+  background-color: rgb(245, 180, 94);
+  grid-area: tres;
+}
+
+.caja[class~="4"] {
+  background-color: rgb(245, 180, 94);
+  grid-area: cuatro;
+}
+
+.caja[class~="5"] {
+  background-color: rgb(161, 199, 232);
+  grid-area: cinco;
+}
+
+.caja[class~="6"] {
+  background-color: rgb(161, 199, 232);
+  grid-area: seis;
+}
+
+/* version mobile */
+
+@media (max-width: 50rem) {
+  .modelo {
+    width: 80vw;
+    height: 55vh;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "uno uno"
+      "dos dos"
+      "tres cuatro"
+      "cinco seis";
+  }
+}
