@@ -21,15 +21,21 @@
 
             <form action="#" method="POST">
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Juan Perez" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-                <label for="email">Correo electrónico:</label>
+                <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta acá..." required></textarea>
+                <label for="tel">Tel:</label>
+                <input type="tel" id="tel" name="tel" placeholder="11XXXXXXXX" required>
 
-                <button type="submit">Enviar mensaje</button>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje acá..." required></textarea>
+
+                <div class="contenedor-botones">
+                    <button type="submit">Enviar</button>
+                    <button type="reset" >Cancelar</button>
+                </div>
             </form>
         </section>
 

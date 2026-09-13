@@ -154,3 +154,19 @@ body {
 .seccion-contacto button:hover {
     background-color: #9a3412;
 }
+
+.contenedor-botones {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.seccion-contacto button[type="reset"] {
+    background-color: #cbd5e1;
+    color: #0f172a;
+}
+
+.seccion-contacto button[type="reset"]:hover {
+    background-color: #94a3b8;
+}
