@@ -95,3 +95,62 @@ body {
     border-radius: 2rem 0 2rem 0;
     
 }
+
+/*Contacto*/
+.seccion-contacto {
+    width: 80%;
+    max-width: 55rem;
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 2rem 0 2rem 0;
+    border: #c2410c solid 0.2rem;
+}
+
+.seccion-contacto h2 {
+    text-align: center;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.seccion-contacto p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #334155;
+}
+
+.seccion-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.seccion-contacto label {
+    font-weight: bold;
+    color: #0f172a;
+}
+
+.seccion-contacto input,
+.seccion-contacto textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 0.1rem solid #cbd5e1;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.seccion-contacto button {
+    background-color: #c2410c;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.seccion-contacto button:hover {
+    background-color: #9a3412;
+}
