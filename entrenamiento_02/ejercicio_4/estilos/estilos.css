@@ -9,25 +9,17 @@ body {
   width: 100vw;
   font-family: Arial, sans-serif;
 }
-h1 {
-  margin: 0;
-  height: 10vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 main {
-  height: 90vh;
+  
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .modelo {
   display: grid;
-  height: 50vh;
-  width: 45vw;
+  height: 100vh;
+  width: 100vw;
   border: 0.1rem solid black;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -69,8 +61,8 @@ main {
 }
 @media (max-width: 70rem) {
   .modelo {
-    width: 80vw;
-    min-height: 55vh;
+    width: 100vw;
+    min-height: 100vh;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(3, 1fr);
 
